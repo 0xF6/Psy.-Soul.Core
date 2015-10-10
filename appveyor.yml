@@ -1,0 +1,23 @@
+version: 0.2.{build}
+
+artifacts:
+  - path: Framework.zip # pushing a single file
+  - path: Psy.-Soul.Core\bin\$(configuration)
+    name: Psy.-Soul.Core
+
+  # pushing entire folder as a zip archive
+  - path: logs
+
+branches:
+  only:
+    - master
+platform:
+  - Any CPU
+configuration:
+  - Debug
+  
+environment:
+  VS_VERSION: vs2015
+build:
+  parallel: true                  # enable MSBuild parallel builds
+  project: Psy.-Soul.Core.sln     # path to Visual Studio solution or project
