@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RC.Core">
-      <HintPath>G:\packages\RC.Core.dll</HintPath>
+      <HintPath>lib\RC.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
