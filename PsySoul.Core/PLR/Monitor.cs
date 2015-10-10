@@ -6,7 +6,7 @@
 //# =========================== #//# ========================= #//
 using Rc.Framework;
 
-namespace Psy._Soul.Core.PLR
+namespace PsySoul.Core.PLR
 {
     /// <summary>
     /// Монитор Ядра
@@ -18,7 +18,7 @@ namespace Psy._Soul.Core.PLR
         /// </summary>
         public static string Header = "";
         /// <summary>
-        /// Enable write member & line code
+        /// Enable write member or line code
         /// </summary>
         public static bool EnabledTrace = false;
         /// <summary>
@@ -30,7 +30,7 @@ namespace Psy._Soul.Core.PLR
         public static void WriteLine(this string t, [System.Runtime.CompilerServices.CallerMemberName] string member = "", [System.Runtime.CompilerServices.CallerLineNumber] int line = 0)
         {
             string temp1;
-            if (EnabledTrace)   temp1 = $"[{member}:{line}]>";
+            if (EnabledTrace)   temp1 = $"+g4\0{member}+g0\0:+g4\0{line}+g0\0";
             else                temp1 = string.Empty;
             if (EnabledTrace)   Header = temp1;
             if (Header == "")   Terminal.WriteLine($"{t}");

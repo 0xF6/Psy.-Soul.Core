@@ -7,8 +7,8 @@
     <ProjectGuid>{85111BB5-594D-46D8-A0DF-25C78382BAC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Psy._Soul.Core</RootNamespace>
-    <AssemblyName>Psy.-Soul.Core</AssemblyName>
+    <RootNamespace>PsySoul.Core</RootNamespace>
+    <AssemblyName>PsySoul.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -22,7 +22,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>bin\Debug\Psy.-Soul.Core.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\PsySoul.Core.XML</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,8 +36,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RC.Core">
-      <HintPath>lib\RC.Core.dll</HintPath>
+    <Reference Include="RC.Core, Version=7.7.2466.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RC.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
