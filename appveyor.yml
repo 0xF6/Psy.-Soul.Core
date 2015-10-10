@@ -20,4 +20,4 @@ environment:
   VS_VERSION: vs2015
 build:
   parallel: true                  # enable MSBuild parallel builds
-  project: Psy.-Soul.Core.sln     # path to Visual Studio solution or project
+  project: PsySoul.Core.sln     # path to Visual Studio solution or project
