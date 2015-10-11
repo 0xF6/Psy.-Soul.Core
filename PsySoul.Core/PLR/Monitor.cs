@@ -30,11 +30,18 @@ namespace PsySoul.Core.PLR
         public static void WriteLine(this string t, [System.Runtime.CompilerServices.CallerMemberName] string member = "", [System.Runtime.CompilerServices.CallerLineNumber] int line = 0)
         {
             string temp1;
-            if (EnabledTrace)   temp1 = $"+g4\0{member}+g0\0:+g4\0{line}+g0\0";
-            else                temp1 = string.Empty;
-            if (EnabledTrace)   Header = temp1;
-            if (Header == "")   Terminal.WriteLine($"{t}");
-            else                Terminal.WriteLine(t, Header);
+            if (EnabledTrace)
+                temp1 = $"+g4\0{member}+g0\0:+g4\0{line}+g0\0";
+            else
+                temp1 = string.Empty;
+
+            if (EnabledTrace)
+                Header = temp1;
+
+            if (Header == "")
+                Terminal.WriteLine($"{t}");
+            else
+                Terminal.WriteLine(t, Header);
         }
     }
 }

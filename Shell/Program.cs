@@ -10,10 +10,11 @@ namespace Shell
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Monitor.EnabledTrace = true;
-            "Hello Tower!".WriteLine();
+            Monitor.EnabledTrace = false;
+            Monitor.Header = "+g4\0PLR+g0\0";
+            $"Test".WriteLine();
         }
     }
 }
