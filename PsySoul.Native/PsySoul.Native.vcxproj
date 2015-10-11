@@ -118,6 +118,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Euclid.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="MPUnit.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="RSA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Euclid.cpp" />
+    <ClCompile Include="MPUnit.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="RSA.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

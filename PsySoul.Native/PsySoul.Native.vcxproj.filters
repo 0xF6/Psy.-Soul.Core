@@ -13,5 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы исходного кода\RSA">
+      <UniqueIdentifier>{50897853-544f-4c95-b7e4-b26ee45be3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\hRSA">
+      <UniqueIdentifier>{23ffd392-7e31-41fd-949a-9dae1d5698e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Заголовочные файлы\hRSA</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA.h">
+      <Filter>Заголовочные файлы\hRSA</Filter>
+    </ClInclude>
+    <ClInclude Include="Euclid.h">
+      <Filter>Заголовочные файлы\hRSA</Filter>
+    </ClInclude>
+    <ClInclude Include="MPUnit.h">
+      <Filter>Заголовочные файлы\hRSA</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Файлы исходного кода\RSA</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA.cpp">
+      <Filter>Файлы исходного кода\RSA</Filter>
+    </ClCompile>
+    <ClCompile Include="Euclid.cpp">
+      <Filter>Файлы исходного кода\RSA</Filter>
+    </ClCompile>
+    <ClCompile Include="MPUnit.cpp">
+      <Filter>Файлы исходного кода\RSA</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
