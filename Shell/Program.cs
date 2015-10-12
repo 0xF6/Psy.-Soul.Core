@@ -12,8 +12,7 @@ namespace Shell
     {
         static void Main()
         {
-            Monitor.EnabledTrace = false;
-            Monitor.Header = "+g4\0PLR+g0\0";
+            Monitor.EnabledTrace = true;
             $"Test".WriteLine();
         }
     }
